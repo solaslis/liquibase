@@ -4,7 +4,7 @@
 
     <groupId>org.liquibase</groupId>
     <artifactId>liquibase-parent</artifactId>
-    <version>3.5.4-SNAPSHOT</version>
+    <version>3.5.x-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Liquibase Parent Configuration</name>
@@ -473,30 +473,30 @@
             </build>
         </profile>
 
-        <profile>
-            <id>debian</id>
-            <activation>
-                <os>
-                    <family>linux</family>
-                </os>
-            </activation>
-            <modules>
-                <module>liquibase-debian</module>
-            </modules>
-        </profile>
+        <!--<profile>-->
+            <!--<id>debian</id>-->
+            <!--<activation>-->
+                <!--<os>-->
+                    <!--<family>linux</family>-->
+                <!--</os>-->
+            <!--</activation>-->
+            <!--<modules>-->
+                <!--<module>liquibase-debian</module>-->
+            <!--</modules>-->
+        <!--</profile>-->
 
 
-        <profile>
-            <id>rpm</id>
-            <activation>
-                <os>
-                    <family>linux</family>
-                </os>
-            </activation>
-            <modules>
-                <module>liquibase-rpm</module>
-            </modules>
-        </profile>
+        <!--<profile>-->
+            <!--<id>rpm</id>-->
+            <!--<activation>-->
+                <!--<os>-->
+                    <!--<family>linux</family>-->
+                <!--</os>-->
+            <!--</activation>-->
+            <!--<modules>-->
+                <!--<module>liquibase-rpm</module>-->
+            <!--</modules>-->
+        <!--</profile>-->
 
         <profile>
             <id>doclint-java8-disable</id>
